@@ -95,6 +95,6 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'Layer'
 }
 </script>
