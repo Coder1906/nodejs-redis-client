@@ -7,7 +7,7 @@ import koa from 'koa';
 import Router from 'koa-router';
 import logger from 'koa-logger';
 import common from './lib/common';
-import webSocketServer from './websocket'
+import {webSocketServer} from './websocket'
 const app = new koa();
 
 app.use(logger());
@@ -23,4 +23,6 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 webSocketServer(app);
-app.listen(8082);
+app.listen(8082, () => {
+    console.log('start redis-app server success')
+});

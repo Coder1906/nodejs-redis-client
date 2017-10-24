@@ -4,7 +4,7 @@
  * Email: 312073339@qq.com
  */
 import EventEmitter from 'events';
-export default class Redis extends EventEmitter {
+export default class Redis {
     constructor () {
         
     }
